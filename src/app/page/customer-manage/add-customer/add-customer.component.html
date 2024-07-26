@@ -1,27 +1,22 @@
-<div class="container m-5">
+<div class="container mt-3">
 
-    <div class="text-bg-primary text-center mb-3 p-3">Add Customer</div>
-
+    <div class="text-bg-dark text-center mb-3 p-3">Add Customer</div>
     <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1"></span>
-        <input type="text" class="form-control" placeholder="Name" aria-label="Username" [(ngModel)="customerObj.name"]
+        <input type="text" class="form-control" placeholder="Name" aria-label="name"  [(ngModel)]="customerObj.name"
+            aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="City" aria-label="city"  [(ngModel)]="customerObj.city"
+            aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Contact" aria-label="contact" [(ngModel)]="customerObj.contact"
             aria-describedby="basic-addon1">
     </div>
 
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1"></span>
-        <input type="text" class="form-control" placeholder="City" aria-label="Username" [(ngModel)="customerObj.city"]
-            aria-describedby="basic-addon1">
-    </div>
+    <button class="bg-success p-2" (click) = "addCustomer()">Add</button>
 
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1"></span>
-        <input type="text" class="form-control" placeholder="Contact" aria-label="Username" [(ngModel)="customerObj.contact"]
-            aria-describedby="basic-addon1">
-    </div>
-
-
-    <button class="btn btn-outline-primary mt-4" (click)="addCustomer()">Add</button>
-
-    
 </div>

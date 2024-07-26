@@ -24,7 +24,7 @@ export class AddCustomerComponent {
   addCustomer() {
     this.http.post("http://localhost:8080/customer-controller/add-customer",this.customerObj).subscribe(
       (data) => {
-        console.log("added")
+        console.log("data")
       }
     )
    }
